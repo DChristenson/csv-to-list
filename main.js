@@ -7,11 +7,7 @@ const onSubmit = () => {
         let text = `<li class="list-item">${item}</item>`;
         out.innerHTML += text
     });
-
-
-
-
-
+    
     addToggle()
 };
 
