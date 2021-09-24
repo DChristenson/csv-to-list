@@ -8,9 +8,16 @@ const onSubmit = () => {
         out.innerHTML += text
     });
 
-    let arr = document.querySelectorAll(".list-item")
-    arr.forEach(item => item.addEventListener("click", () => item.classList.toggle("active")))
+
+
+
+
+    addToggle()
 };
 
 $("#submit").on("click", onSubmit);
 
+const addToggle = () => {
+    let arr = document.querySelectorAll(".list-item")
+    arr.forEach(item => item.addEventListener("click", () => item.classList.toggle("active")))
+}
